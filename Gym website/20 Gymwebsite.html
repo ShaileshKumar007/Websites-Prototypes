@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shailesh's Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* url hlp to input image, here in body, under url path of that pic will come  */
+        background: url('gympic.jpg');
+
+    }
+
+    .left {
+        position: absolute;
+        left: 50px;
+        top: 13px;
+        border: 2px solid red;
+        display: inline-block;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 16px;
+
+    }
+
+    .left img {
+        width: 120px;
+        padding-top: 0px;
+
+    }
+
+    .mid {
+        /* 3 condition if we have to center the element with margin is display block should be there,width should be set and x position of margin should be auto */
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        border: 2px solid green;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        border: 2px solid yellow;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 22px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(63, 56, 126);
+        color: white;
+        padding: 4px 15px;
+        border-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+
+
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+    .btn1{
+        margin: 2px 181px;
+    background-color: rgb(63, 56, 126);
+    color: white;
+    padding: 4px 15px;
+    border-color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 82px 49px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    .formgroup input{
+        text-align: center;
+    display: block;
+    width: 75%;
+    padding: 8px;
+    border: 5px solid black;
+    margin: 7px auto;
+    font-size: 20px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gymlogo.jpg" alt="This is logo">
+            <div>Shailesh Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of the World!</h1>
+        <!-- here noaction.php is for example bcz we don't have backend-->
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="email" name="" placeholder="Enter Your E-mail address">
+            </div>
+            <div class="formgroup">
+                <input type="int" name="" placeholder="Enter your phone number">
+            </div>
+            <button class="btn1">Submit Now</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
